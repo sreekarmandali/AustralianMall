@@ -1,0 +1,36 @@
+{
+  "name": "australian_mall",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "axios-mock-adapter": "^1.17.0",
+    "bootstrap": "^4.4.1",
+    "bootstrap-vue": "^2.1.0",
+    "core-js": "^3.4.4",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
+    "sinon": "^8.0.4",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.5",
+    "vue-router": "^3.1.3",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-router": "^4.1.0",
+    "@vue/cli-plugin-unit-mocha": "^4.1.0",
+    "@vue/cli-plugin-vuex": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "chai": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
