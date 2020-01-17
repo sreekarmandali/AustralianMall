@@ -30,7 +30,7 @@
 
 
                         <div class="row">
-                            <button type="button" class="btn-lg btn-success" @click="addReview(review);">Submit</button>
+                            <button type="button" class="btn-lg btn-success" @click="addReviews(review);">Submit</button>
                         </div>
                         <!-- top row -->
                         <!-- middle row -->
@@ -94,6 +94,13 @@
                 this.review.rating = "";
                 this.review.reviewComment = "";
             },
+            addReviews: async function (payload) {
+                await this.$store.dispatch(ADD_REVIEW, payload);
+                this.resetReview();
+                
+
+
+            }
             
             
 
