@@ -15,7 +15,7 @@ describe('SET TOILET MUTUATION', () => {
     }
     it('SETS ToiletDetails AFTER FETCHING clicked', () => {
         const toilets = [{ "tableId": 1, "Distance": 4, "closingTime": "23:30:00", "cleaningTime": "12:30:00" }]
-        mutations.SET_TOILETS(state, toilets)
+        mutations.setToilets(state, toilets)
         assert(state.toilets, toilets, "both r equal");
 
     })
@@ -31,7 +31,7 @@ describe("actions", () => {
         let toilets = [{ "tableId": 1, "Distance": 4, "closingTime": "23:30:00", "cleaningTime": "12:30:00" }, { "tableId": 2, "Distance": 5, "closingTime": "12:30:00", "cleaningTime": "05:30:00" }, { "tableId": 3, "Distance": 6, "closingTime": "10:30:00", "cleaningTime": "06:30:00" }, { "tableId": 4, "Distance": 4, "closingTime": "23:30:00", "cleaningTime": "05:30:00" }];
         mock.onGet("http://localhost:8000/toilets").reply(200, toilets);
         let commit = (type, payload) => {
-            assert(type, 'SET_TOILETS', "both r equal");
+            assert(type, 'setToilets', "both r equal");
             assert(payload, toilets, "both r equal");
         };
 
