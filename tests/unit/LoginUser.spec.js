@@ -1,6 +1,6 @@
 
 import { shallowMount } from '@vue/test-utils';
-import login from '@/components/Login.vue';
+import login from '@/views/Login.vue';
 import sinon from 'sinon';
 
 
